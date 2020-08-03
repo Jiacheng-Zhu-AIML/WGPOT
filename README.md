@@ -51,7 +51,7 @@ wd_gp = Wasserstein_GP(gp_0, gp_1)
 from wgpot import GP_W_barycenter, Wasserstein_GP
 
 gp_list = [(gp_0, k_0), (gp_1, k_1), ..., (gp_m, k_m)]  
-# gp_list is the list of tuples contains the mean of covariance 
+# gp_list is the list of tuples contains the mean and covariance 
 # matrix of one Gaussian Process
 
 mu_bc, k_bc = GP_W_barycenter(gp_list)
@@ -63,7 +63,7 @@ from wgpot import expmap
 
 v_mu, v_T = logmap(mu_0, k_0, mu_1, k_1)
 # The logarithmic map from Gaussian Distributions on the 
-# Riemannian manifold with the Wasseerstein matric
+# Riemannian manifold with the Wasseerstein metric
 
 q_mu, q_K = expmap(gp_1_mu, gp_1_K, v_mu_t, v_T_t)
 # Exponential map on the Riemannian manifold. For more detials, 
