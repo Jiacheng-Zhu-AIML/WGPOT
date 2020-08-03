@@ -1,7 +1,8 @@
 # WGPOT: Wasserstein Distance and Optimal Transport Map of Gaussian Processes
 
 
-![10 context points](data/wgpot_example.gif?raw=true  "Title" )
+<img src="https://raw.githubusercontent.com/VersElectronics/WGPOT/master/data/wgpot_example.gif" height="360" width="480">
+
 
 This repository contains a Python implementation of the Wasserstein 
 Distance, Wasserstein Barycenter and Optimal Transport Map of Gaussian Processes. 
@@ -73,14 +74,14 @@ q_mu, q_K = expmap(gp_1_mu, gp_1_K, v_mu_t, v_T_t)
 
 * The Wasserstein Barycenter between a set of Gaussian Processes
 
-![10 context points](data/barycenter_result.png?raw=true  "Title" )
+<img src="https://raw.githubusercontent.com/VersElectronics/WGPOT/master/data/barycenter_result.png" height="360" width="480">
 
 * The transport map (geodesic) between two Gaussian Processes
 
-![10 context points](data/transport_result.png?raw=true  "Title" )
+<img src="https://raw.githubusercontent.com/VersElectronics/WGPOT/master/data/transport_result.png" height="360" width="480">
 
 * The transport map  between two 2-D Gaussian Processes
 
-![10 context points](data/two_2D_GP.gif?raw=true  "Title" )
+<img src="https://raw.githubusercontent.com/VersElectronics/WGPOT/master/data/two_2D_GP.gif" height="360" width="480">
 
-![10 context points](data/2d_GP.png?raw=true  "Title" )
+<img src="https://raw.githubusercontent.com/VersElectronics/WGPOT/master/data/2d_GP.png" width="480">
