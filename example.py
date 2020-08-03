@@ -1,3 +1,11 @@
+"""
+WGPOT
+Wasserstein Distance and Optimal Transport Map
+of Gaussian Processes
+
+Jiacheng Zhu
+jzhu4@andrew.cmu.edu
+"""
 import numpy as np
 import scipy.io
 import scipy.linalg
@@ -32,6 +40,7 @@ for index, gp in enumerate(gp_list):
     # break
 plt.xlabel('days')
 plt.ylabel('Temperature')
+
 
 # Notice: Compute the Wasserstein distance of two GPs
 gp_0 = gp_list[0]

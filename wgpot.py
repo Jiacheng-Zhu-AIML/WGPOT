@@ -1,3 +1,11 @@
+"""
+WGPOT
+Wasserstein Distance and Optimal Transport Map
+of Gaussian Processes
+
+Jiacheng Zhu
+jzhu4@andrew.cmu.edu
+"""
 import numpy as np
 import scipy.io
 import scipy.linalg
