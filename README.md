@@ -32,7 +32,7 @@ measures."](https://projecteuclid.org/euclid.ojm/1326291215) Osaka Journal of Ma
 
 * Compute Wasserstein distances between two Gaussian Processes
 
-```
+```python
 # Import the function
 from wgpot import Wasserstein_GP
 
@@ -45,7 +45,7 @@ gp_1 = (mu_1, K_1)
 wd_gp = Wasserstein_GP(gp_0, gp_1)
 ```
 * Compute Barycenter of a set of Gaussian Processes
-```
+```python
 # Import the functions
 from wgpot import GP_W_barycenter, Wasserstein_GP
 
@@ -57,7 +57,7 @@ mu_bc, K_bc = GP_W_barycenter(gp_list)
 ```
 
 * Transport map (Push forward) from one Gaussian Process to another
-```
+```python
 from wgpot import expmap
 
 v_mu, v_T = logmap(mu_0, K_0, mu_1, K_1)
