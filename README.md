@@ -31,7 +31,7 @@ measures."](https://projecteuclid.org/euclid.ojm/1326291215) Osaka Journal of Ma
 
 ## Examples
 
-* Compute Wasserstein distances between two Gaussian Processes
+* Compute the Wasserstein distance between two Gaussian Processes
 
 ```python
 # Import the function
@@ -45,7 +45,7 @@ gp_1 = (mu_1, k_1)
 
 wd_gp = Wasserstein_GP(gp_0, gp_1)
 ```
-* Compute Barycenter of a set of Gaussian Processes
+* Compute the Barycenter of a set of Gaussian Processes
 ```python
 # Import the functions
 from wgpot import GP_W_barycenter, Wasserstein_GP
