@@ -44,6 +44,7 @@ mu_bc, K_bc = GP_W_barycenter(gp_list)
 Plot_GP(plt, x_days.T, mu_bc, K_bc, 'r', 1, 0.5, 'Barycenter')
 plt.legend()
 plt.title('The populations of GPs in blue. The Wasserstein barycenter in red')
+plt.savefig('data/barycenter_result.png', bbox_inches='tight')
 
 # Notice: Obtain the optimal transport map between two GPs
 gp_0_mu, gp_0_K = gp_list[4]
@@ -63,6 +64,8 @@ for t in [0.2, 0.4, 0.6, 0.8, 1.0]:
     v_T_t = t * v_T
     q_mu, q_K = expmap(gp_1_mu, gp_1_K, v_mu_t, v_T_t)
     Plot_GP(plt, x_days.T, q_mu, q_K, 'orange', 0.5, 0.25, 'geodesic t=' + str(t))
-
+plt.xlabel('days')
+plt.ylabel('Temperature')
 plt.legend()
+plt.savefig('data/transport_result.png', bbox_inches='tight')
 plt.show()
