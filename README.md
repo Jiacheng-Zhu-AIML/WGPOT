@@ -36,8 +36,8 @@ measures."](https://projecteuclid.org/euclid.ojm/1326291215) Osaka Journal of Ma
 # Import the function
 from wgpot import Wasserstein_GP
 
-gp_0 = (mu_0, K_0)     
-gp_1 = (mu_1, K_1)
+gp_0 = (mu_0, k_0)     
+gp_1 = (mu_1, k_1)
 # mu_0/mu_1 (ndarray (n, 1)) is the mean of one Gaussian Process 
 # K_0/K_1 (ndarray (n, n)) is the covariance matrix of one 
 # Gaussain Process
@@ -49,18 +49,18 @@ wd_gp = Wasserstein_GP(gp_0, gp_1)
 # Import the functions
 from wgpot import GP_W_barycenter, Wasserstein_GP
 
-gp_list = [(gp_0, K_0), (gp_1, K_1), ..., (gp_m, K_m)]  
+gp_list = [(gp_0, k_0), (gp_1, k_1), ..., (gp_m, k_m)]  
 # gp_list is the list of tuples contains the mean of covariance 
 # matrix of one Gaussian Process
 
-mu_bc, K_bc = GP_W_barycenter(gp_list)
+mu_bc, k_bc = GP_W_barycenter(gp_list)
 ```
 
 * Transport map (Push forward) from one Gaussian Process to another
 ```python
 from wgpot import expmap
 
-v_mu, v_T = logmap(mu_0, K_0, mu_1, K_1)
+v_mu, v_T = logmap(mu_0, k_0, mu_1, k_1)
 # The logarithmic map from Gaussian Distributions on the 
 # Riemannian manifold with the Wasseerstein matric
 
